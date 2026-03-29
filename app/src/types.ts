@@ -11,7 +11,10 @@ export interface User {
 
 export interface Link {
   description?: string;
-  personId: string;
+  /** @deprecated Use personIds instead */
+  personId?: string;
+  personIds?: string[];
+  minCount?: number;
   albumId: string;
   apiKeyShort: string;
 }

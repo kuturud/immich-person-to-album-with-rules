@@ -6,9 +6,20 @@
       "apiKey": "",
       "personLinks": [
         {
-          "description": "Photos of Joe",
+          "description": "Photos of Joe (single person, legacy format)",
           "personId": "Joe's person ID",
           "albumId": "Shared album ID"
+        },
+        {
+          "description": "Photos of Joe (single person, new format)",
+          "personIds": ["Joe's person ID"],
+          "albumId": "Shared album ID"
+        },
+        {
+          "description": "Photos with at least 2 of Alice, Bob, or Carol",
+          "personIds": ["Alice's person ID", "Bob's person ID", "Carol's person ID"],
+          "minCount": 2,
+          "albumId": "Family album ID"
         }
       ]
     }
